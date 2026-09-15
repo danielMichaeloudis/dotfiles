@@ -107,6 +107,12 @@ M.polish_hl = {
     ["@variable.parameter"] = {
       fg = M.base_30.cyan,
     },
+    ["@variable.builtin"] = {
+      fg = M.base_30.blue,
+    },
+    ["@contant.builtin"] = {
+      fg = M.base_30.blue,
+    },
     ["@variable.member"] = {
       fg = M.base_30.cyan,
     },
