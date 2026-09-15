@@ -7,6 +7,9 @@ if [ ! -d "$ZINIT_HOME" ]; then
    git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
 
+export PATH="/opt/nvim-linux-x86_64/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
@@ -60,12 +63,25 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
-alias ls='ls --color'
+
+# Colours
+alias ls='ls --color=auto'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+
+alias lg='lazygit'
 alias vim='nvim'
+alias vi='nvim'
 alias c='clear'
 alias pacman='sudo pacman'
+alias apt='sudo apt'
 alias grep='rg'
 alias find='fd'
+
+# Code alias for wsl
+if [  -d "/mnt/c/Users/daniel.michaeloudis/AppData/Local/Programs/Microsoft\ VS\ Code/bin" ]; then
+	alias code='/mnt/c/Users/daniel.michaeloudis/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code'
+fi
 
 # Shell integrations
 eval "$(fzf --zsh)"
