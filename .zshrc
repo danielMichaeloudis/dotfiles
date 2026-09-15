@@ -90,9 +90,9 @@ eval "$(zoxide init --cmd cd zsh)"
 
 export TERM=xterm-256color
 
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
-fi
+# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#   exec tmux
+# fi
 
 # bun completions
 [ -s "/home/dan/.bun/_bun" ] && source "/home/dan/.bun/_bun"
