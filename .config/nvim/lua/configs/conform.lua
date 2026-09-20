@@ -5,8 +5,8 @@ local options = {
     html = { "prettier" },
     python = { "ruff_format" },
     rust = { "rustfmt" },
-    json = { "pretttier" },
-    json5 = { "pretttier" },
+    json = { "prettier" },
+    json5 = { "prettier" },
     js = { "prettier" },
   },
 
