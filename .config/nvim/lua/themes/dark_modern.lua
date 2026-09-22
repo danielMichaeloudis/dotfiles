@@ -80,9 +80,6 @@ M.polish_hl = {
     ["@module"] = {
       fg = M.base_30.teal,
     },
-    ["@keyword"] = {
-      fg = M.base_30.blue,
-    },
     ["@function"] = {
       fg = M.base_30.yellow,
     },
@@ -189,7 +186,7 @@ M.polish_hl = {
     Exception = {
       fg = M.base_30.purple,
     },
-    Identifier  = {
+    Identifier = {
       fg = M.base_30.teal,
     },
     -- Rust
