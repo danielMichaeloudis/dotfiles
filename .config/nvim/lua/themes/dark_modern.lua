@@ -189,6 +189,9 @@ M.polish_hl = {
     Exception = {
       fg = M.base_30.purple,
     },
+    Identifier  = {
+      fg = M.base_30.teal,
+    },
     -- Rust
     rustSigil = {
       fg = M.base_30.white,
