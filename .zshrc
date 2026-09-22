@@ -9,6 +9,7 @@ fi
 
 export PATH="/opt/nvim-linux-x86_64/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export EDITOR="/usr/bin/nvim"
 
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
@@ -104,3 +105,12 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Yazi
+function y() {
+	local tmp cwd; tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd" || builtin true
+	command rm -f -- "$tmp"
+}
