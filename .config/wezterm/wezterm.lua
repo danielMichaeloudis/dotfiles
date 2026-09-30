@@ -3,8 +3,9 @@ local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 
--- config.default_prog = { 'pwsh.exe' }
-config.warn_about_missing_glyphs = false
+if wezterm.target_triple == "x86_64-pc-windows-msvc" then
+	config.default_prog = { "pwsh.exe" }
+end
 
 -- Initial window setup.
 config.initial_cols = 120

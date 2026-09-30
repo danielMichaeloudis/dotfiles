@@ -71,6 +71,7 @@ alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
 
 alias lg='lazygit'
+alias gl='glab-tui'
 alias vim='nvim'
 alias vi='nvim'
 alias c='clear'
