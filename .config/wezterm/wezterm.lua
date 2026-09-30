@@ -43,8 +43,8 @@ config.colors = {
 }
 
 -- Keybindings.
-config.leader = { key = "Space", mods = "CTRL" }
-local tmux_keys = require("tmux-nvim-keybindings")
-config.keys = tmux_keys.keys
+-- config.leader = { key = "Space", mods = "CTRL" }
+-- local tmux_keys = require("tmux-nvim-keybindings")
+-- config.keys = tmux_keys.keys
 
 return config
