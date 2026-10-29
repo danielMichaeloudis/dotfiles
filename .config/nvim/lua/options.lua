@@ -20,3 +20,10 @@ vim.api.nvim_create_autocmd("CursorHold", {
 })
 
 vim.g.lazyvim_python_ruff = "ruff"
+
+vim.opt.relativenumber = true
+
+local is_windows = vim.fn.has "win32" ~= 0
+if is_windows then
+  vim.o.shell = [[pwsh.exe]]
+end

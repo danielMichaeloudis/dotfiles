@@ -35,3 +35,4 @@ require "autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+vim.o.exrc = true
