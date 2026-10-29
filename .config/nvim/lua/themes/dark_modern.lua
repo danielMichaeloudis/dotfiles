@@ -189,6 +189,9 @@ M.polish_hl = {
     Identifier = {
       fg = M.base_30.teal,
     },
+    Repeat = {
+      fg = M.base_30.purple,
+    },
     -- Rust
     rustSigil = {
       fg = M.base_30.white,

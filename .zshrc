@@ -11,6 +11,8 @@ export PATH="/opt/nvim-linux-x86_64/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export EDITOR="/usr/bin/nvim"
 
+export KWIN_DRM_NO_AMS=1
+
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
