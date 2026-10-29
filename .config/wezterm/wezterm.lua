@@ -44,8 +44,10 @@ config.colors = {
 }
 
 -- Keybindings.
--- config.leader = { key = "Space", mods = "CTRL" }
--- local tmux_keys = require("tmux-nvim-keybindings")
--- config.keys = tmux_keys.keys
+if package.config:sub(1, 1) == "\\" then -- If in windows
+	config.leader = { key = "Space", mods = "CTRL" }
+	local tmux_keys = require("tmux-nvim-keybindings")
+	config.keys = tmux_keys.keys
+end
 
 return config

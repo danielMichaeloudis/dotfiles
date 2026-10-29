@@ -80,11 +80,20 @@ M.polish_hl = {
     ["@module"] = {
       fg = M.base_30.teal,
     },
+    ["@type.builtin"] = {
+      fg = M.base_30.teal,
+    },
     ["@function"] = {
+      fg = M.base_30.yellow,
+    },
+    ["@function.call"] = {
       fg = M.base_30.yellow,
     },
     ["@function.method"] = {
       fg = M.base_30.yellow,
+    },
+    ["@function.macro"] = {
+      fg = M.base_30.blue,
     },
     ["@constant.macro"] = {
       fg = M.base_30.blue,
@@ -115,6 +124,18 @@ M.polish_hl = {
     },
     ["@number"] = {
       fg = M.base_30.vibrant_green,
+    },
+    ["@number.float"] = {
+      fg = M.base_30.vibrant_green,
+    },
+    ["@character"] = {
+      fg = M.base_30.vibrant_green,
+    },
+    ["@boolean"] = {
+      fg = M.base_30.blue,
+    },
+    ["@punctuation.delimiter"] ={
+      fg = M.base_30.white
     },
     -- Rust
     ["@lsp.type.const.rust"] = {
@@ -161,6 +182,9 @@ M.polish_hl = {
     Number = {
       fg = M.base_30.vibrant_green,
     },
+    Float = {
+      fg = M.base_30.vibrant_green,
+    },
     StorageClass = {
       fg = M.base_30.blue,
     },
@@ -186,8 +210,8 @@ M.polish_hl = {
     Exception = {
       fg = M.base_30.purple,
     },
-    Identifier = {
-      fg = M.base_30.teal,
+    Structure = {
+      fg = M.base_30.blue,
     },
     Repeat = {
       fg = M.base_30.purple,
@@ -218,6 +242,10 @@ M.polish_hl = {
     -- Json
     jsonKeyword = {
       fg = M.base_30.teal,
+    },
+    -- Rainbow Delimiters
+    RainbowDelimitersYellow = {
+      fg = "#FFD700",
     },
   },
 }

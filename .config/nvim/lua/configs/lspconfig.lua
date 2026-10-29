@@ -5,7 +5,7 @@ local lspconfig = require "nvchad.configs.lspconfig"
 
 lspconfig.servers = { "html", "cssls", "ts_ls", "pyright", "ruff", "vtsls" }
 
-local servers = { "ruff", "ty", "vtsls" }
+local servers = { "ruff", "ty", "vtsls", "ts_ls" }
 
 vim.lsp.config("ruff", {
 
