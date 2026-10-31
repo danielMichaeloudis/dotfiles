@@ -16,3 +16,13 @@ vim.keymap.set("n", "<F2>", function()
 end, { desc = "LSP Rename Variable" })
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+local is_windows = vim.fn.has "win32" ~= 0
+if is_windows then
+  map("n", "<c-n>", function() end)
+end
+map(
+  "n",
+  "<leader>ff",
+  "<cmd>lua require'telescope.builtin'.find_files({ find_command = {'rg', '--files', '--hidden', '-g', '!.git' }})<cr>",
+  default_opts
+)

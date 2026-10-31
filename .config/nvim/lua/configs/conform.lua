@@ -8,6 +8,8 @@ local options = {
     json = { "prettier" },
     json5 = { "prettier" },
     js = { "prettier" },
+    ts = { "prettier" },
+    markdown = { "prettier" },
   },
 
   format_on_save = {
