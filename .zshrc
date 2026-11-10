@@ -7,7 +7,7 @@ if [ ! -d "$ZINIT_HOME" ]; then
    git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
 
-export PATH="/opt/nvim-linux-x86_64/bin:$PATH"
+export PATH="$HOME/.local/bin:/opt/nvim-linux-x86_64/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export EDITOR="/usr/bin/nvim"
 
