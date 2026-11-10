@@ -27,3 +27,5 @@ local is_windows = vim.fn.has "win32" ~= 0
 if is_windows then
   vim.o.shell = [[pwsh.exe]]
 end
+
+vim.o.conceallevel = 1

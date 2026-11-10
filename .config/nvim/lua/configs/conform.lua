@@ -10,6 +10,7 @@ local options = {
     js = { "prettier" },
     ts = { "prettier" },
     markdown = { "prettier" },
+    qml = { "qmlformat" },
   },
 
   format_on_save = {

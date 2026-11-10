@@ -23,3 +23,15 @@ hl.window_rule({
 	},
 	float = true,
 })
+
+-- Make volume slider floating with no borders.
+hl.window_rule({
+	name = "volume-slider",
+	match = {
+		class = "com.danstuff.volumeslider",
+	},
+	float = true,
+	border_size = 0,
+	no_anim = true,
+	no_initial_focus = true,
+})

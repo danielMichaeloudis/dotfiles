@@ -26,3 +26,11 @@ map(
   "<cmd>lua require'telescope.builtin'.find_files({ find_command = {'rg', '--files', '--hidden', '-g', '!.git' }})<cr>",
   default_opts
 )
+
+-- Obsidian
+
+map("n", "<leader>ot", "<cmd>Obsidian today<cr>")
+map("n", "<leader>oy", "<cmd>Obsidian today -1<cr>")
+map("n", "<leader>or", "<cmd>Obsidian today +1<cr>")
+map("n", "<leader>on", "<cmd>Obsidian new<cr>")
+map("n", "<leader>fo", "<cmd>Obsidian quick_switch<cr>")

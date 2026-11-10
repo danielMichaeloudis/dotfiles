@@ -1,3 +1,6 @@
+-- Environment Variables
+hl.env("QT_QPA_PLATFORMTHEME", "kde")
+
 -- hypr globals
 TERMINAL = "wezterm"
 FILE_MANAGER = "dolphin"
