@@ -8,6 +8,18 @@ return {
   },
 
   {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "rust-analyzer",
+        "stylua",
+        "lua-language-server",
+        "clangd",
+      },
+    },
+  },
+
+  {
     "neovim/nvim-lspconfig",
     config = function()
       require "configs.lspconfig"
