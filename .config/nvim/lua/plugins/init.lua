@@ -1,20 +1,20 @@
 local cmp = require "cmp"
 
 return {
-  {
-    "nvim-telescope/telescope.nvim",
-    dependencies = { "nvim-treesitter/nvim-treesitter" },
-    cmd = "Telescope",
-    opts = function()
-      return {}
-    end,
-  },
+    {
+        "nvim-telescope/telescope.nvim",
+        dependencies = { "nvim-treesitter/nvim-treesitter" },
+        cmd = "Telescope",
+        opts = function()
+            return {}
+        end,
+    },
 
-  {
-    "stevearc/conform.nvim",
-    event = "BufWritePre",
-    opts = require "configs.conform",
-  },
+    {
+        "stevearc/conform.nvim",
+        event = "BufWritePre",
+        opts = require "configs.conform",
+    },
     {
         "stevearc/conform.nvim",
         event = "BufWritePre",
@@ -85,33 +85,29 @@ return {
         opts = {
             -- configurations go here
         },
-      }
-    end,
-  },
-  { "tpope/vim-surround", lazy = false },
-  {
-    "obsidian-nvim/obsidian.nvim",
-    version = "*", -- use latest release, remove to use latest commit
-    ---@module 'obsidian'
-    ---@type obsidian.config
-    opts = {},
-    lazy = false,
-    config = function()
-      require("obsidian").setup {
-        picker = {
-          name = "telescope.nvim",
-        },
-        workspaces = {
-          {
-            name = "personal",
-            path = "~/Documents/Obsidian Vault/",
-          },
-        },
-        legacy_commands = false,
-      }
-    end,
-  },
         lazy = false,
+    },
+    {
+        "obsidian-nvim/obsidian.nvim",
+        version = "*", -- use latest release, remove to use latest commit
+        ---@module 'obsidian'
+        ---@type obsidian.config
+        opts = {},
+        lazy = false,
+        config = function()
+            require("obsidian").setup {
+                picker = {
+                    name = "telescope.nvim",
+                },
+                workspaces = {
+                    {
+                        name = "personal",
+                        path = "~/Documents/Obsidian Vault/",
+                    },
+                },
+                legacy_commands = false,
+            }
+        end,
     },
     {
         "kdheepak/lazygit.nvim",
